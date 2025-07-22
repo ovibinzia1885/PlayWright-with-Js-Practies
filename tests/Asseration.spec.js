@@ -24,4 +24,12 @@ test('Asseration', async ({ page }) => {
   const attBute= await page.locator('#register-button')
   await expect(attBute).toHaveAttribute('type','submit')
 
+  //expect(locator).toHaveText()	Element matches text
+
+  await expect(await page.locator('.page-title h1')).toHaveText('Register')    //full match text 
+
+    await expect(await page.locator('.page-title h1')).toContainText('Reg') // partial match text
+
+
+
 })
