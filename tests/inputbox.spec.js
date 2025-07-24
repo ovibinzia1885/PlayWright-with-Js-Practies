@@ -30,7 +30,7 @@ test("Handle Input",  async({page})=>{
     await page.waitForTimeout(2000)
     */
 
-    //multilple checkbox
+    //multilple checkbox array create
 
     const arraycheckboxLocator=[
         "//label[normalize-space()='Sports']",
