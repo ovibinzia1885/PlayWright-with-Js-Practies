@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test('Asseration', async ({ page }) => {
+test('Hiddendropdown', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
     await page.locator("[name='username']").fill('Admin');
